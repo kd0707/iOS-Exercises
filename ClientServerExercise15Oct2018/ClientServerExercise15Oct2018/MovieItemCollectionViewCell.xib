@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" restorationIdentifier="movieItemCollectionViewCell" reuseIdentifier="MovieItemCollectionViewCell" id="gTV-IL-0wX" customClass="MovieItemCollectionViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="130" height="200"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="130" height="200"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" image="Venom" translatesAutoresizingMaskIntoConstraints="NO" id="wgt-WI-9Y3">
+                        <rect key="frame" x="0.0" y="0.0" width="130" height="171"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Language" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ncy-Lm-Vlj">
+                        <rect key="frame" x="3" y="190" width="39" height="10"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="8"/>
+                        <color key="textColor" red="0.16172704190000001" green="0.1011978729" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hC5-gG-75c">
+                        <rect key="frame" x="44" y="173" width="42.5" height="18"/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="hC5-gG-75c" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="4nb-4Q-gcn"/>
+                <constraint firstAttribute="bottom" secondItem="ncy-Lm-Vlj" secondAttribute="bottom" id="JX6-IE-WP6"/>
+                <constraint firstItem="hC5-gG-75c" firstAttribute="top" secondItem="wgt-WI-9Y3" secondAttribute="bottom" constant="2" id="L5p-82-lj2"/>
+                <constraint firstItem="ncy-Lm-Vlj" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="3" id="R22-eg-uJh"/>
+                <constraint firstItem="wgt-WI-9Y3" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="Rah-P7-Ikv"/>
+                <constraint firstItem="hC5-gG-75c" firstAttribute="top" secondItem="wgt-WI-9Y3" secondAttribute="bottom" constant="2" id="Rrj-cT-MQM"/>
+                <constraint firstItem="wgt-WI-9Y3" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="V9z-xb-rKH"/>
+                <constraint firstAttribute="bottom" secondItem="hC5-gG-75c" secondAttribute="bottom" constant="9" id="YcD-YR-PeK"/>
+                <constraint firstAttribute="trailing" secondItem="wgt-WI-9Y3" secondAttribute="trailing" id="vdW-mJ-yqd"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="139" height="107"/>
+            <connections>
+                <outlet property="movieImageView" destination="wgt-WI-9Y3" id="bMR-z8-EZJ"/>
+                <outlet property="movieLanguageLable" destination="ncy-Lm-Vlj" id="mqN-b4-pIU"/>
+                <outlet property="movieNameLable" destination="hC5-gG-75c" id="dMZ-NN-Zzg"/>
+            </connections>
+            <point key="canvasLocation" x="208" y="170.01499250374815"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="Venom" width="948" height="1344"/>
+    </resources>
+</document>
