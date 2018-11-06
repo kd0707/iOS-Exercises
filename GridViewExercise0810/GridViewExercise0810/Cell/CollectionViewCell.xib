@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CollectionViewCell" id="gTV-IL-0wX" customClass="CollectionViewCell" customModule="GridViewExercise0810" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="440" height="95"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="440" height="95"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TX4-sW-5i1">
+                        <rect key="frame" x="87" y="8" width="333" height="20.5"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="333" id="CdH-P3-jup"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="rupee1" translatesAutoresizingMaskIntoConstraints="NO" id="jgB-Xb-D0v">
+                        <rect key="frame" x="6" y="8" width="73" height="80"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fav Sport" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qc1-ut-RQe">
+                        <rect key="frame" x="87" y="37.5" width="333" height="20.5"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="333" id="8pe-Tb-9Dn"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <color key="backgroundColor" red="0.34669325210000002" green="1" blue="0.98453175719999997" alpha="0.84705882349999995" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="jgB-Xb-D0v" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="6" id="7P8-wT-Gn9"/>
+                <constraint firstItem="jgB-Xb-D0v" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="8" id="8Ad-NT-z6C"/>
+                <constraint firstAttribute="trailing" secondItem="Qc1-ut-RQe" secondAttribute="trailing" constant="20" id="EGO-ic-d5W"/>
+                <constraint firstAttribute="bottom" secondItem="jgB-Xb-D0v" secondAttribute="bottom" constant="7" id="Jvx-OZ-UEt"/>
+                <constraint firstAttribute="trailing" secondItem="TX4-sW-5i1" secondAttribute="trailing" constant="20" id="NP3-JQ-pbb"/>
+                <constraint firstItem="TX4-sW-5i1" firstAttribute="leading" secondItem="jgB-Xb-D0v" secondAttribute="trailing" constant="8" id="PiV-zy-W8e"/>
+                <constraint firstItem="TX4-sW-5i1" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="8" id="QYu-20-mFw"/>
+                <constraint firstItem="Qc1-ut-RQe" firstAttribute="top" secondItem="TX4-sW-5i1" secondAttribute="bottom" constant="9" id="Sis-jS-92b"/>
+                <constraint firstItem="Qc1-ut-RQe" firstAttribute="leading" secondItem="jgB-Xb-D0v" secondAttribute="trailing" constant="8" id="Zlv-ih-OvB"/>
+                <constraint firstItem="Qc1-ut-RQe" firstAttribute="top" secondItem="TX4-sW-5i1" secondAttribute="bottom" constant="9" id="pRA-wf-wl7"/>
+                <constraint firstItem="TX4-sW-5i1" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="87" id="tXd-lT-GZM"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="440" height="95"/>
+            <connections>
+                <outlet property="favLbl" destination="Qc1-ut-RQe" id="ncl-gP-wih"/>
+                <outlet property="lbl" destination="TX4-sW-5i1" id="oOG-HV-r2j"/>
+                <outlet property="prflImage" destination="jgB-Xb-D0v" id="Qok-zb-V14"/>
+            </connections>
+            <point key="canvasLocation" x="-4.7999999999999998" y="91.304347826086968"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="rupee1" width="100" height="100"/>
+    </resources>
+</document>
