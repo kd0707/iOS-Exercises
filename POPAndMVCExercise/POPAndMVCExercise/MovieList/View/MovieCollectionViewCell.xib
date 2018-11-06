@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" restorationIdentifier="MovieCollectionViewCell" reuseIdentifier="MovieCollectionViewCell" id="gTV-IL-0wX" customClass="MovieCollectionViewCell" customModule="POPAndMVCExercise" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="268" height="133"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="268" height="133"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LoginBackground" translatesAutoresizingMaskIntoConstraints="NO" id="WvF-aW-YLq">
+                        <rect key="frame" x="0.0" y="0.0" width="100" height="133"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="100" id="B7n-96-k3R"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zhh-Yu-HmD">
+                        <rect key="frame" x="110" y="10" width="158" height="21"/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Release Date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nwn-pc-v9u">
+                        <rect key="frame" x="110" y="41" width="158" height="16"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Language" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ian-YV-5dC">
+                        <rect key="frame" x="110" y="62" width="158" height="16"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Adult" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gpd-4V-ejn">
+                        <rect key="frame" x="110" y="83" width="158" height="16"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="gpd-4V-ejn" firstAttribute="leading" secondItem="WvF-aW-YLq" secondAttribute="trailing" constant="10" id="8FD-gL-ejR"/>
+                <constraint firstItem="WvF-aW-YLq" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="8PA-WX-pLq"/>
+                <constraint firstItem="Zhh-Yu-HmD" firstAttribute="leading" secondItem="WvF-aW-YLq" secondAttribute="trailing" constant="10" id="9dB-9P-sZi"/>
+                <constraint firstItem="ian-YV-5dC" firstAttribute="leading" secondItem="WvF-aW-YLq" secondAttribute="trailing" constant="10" id="BYb-sm-ylf"/>
+                <constraint firstItem="ian-YV-5dC" firstAttribute="top" secondItem="nwn-pc-v9u" secondAttribute="bottom" constant="5" id="BbU-Rp-UCG"/>
+                <constraint firstAttribute="bottom" secondItem="WvF-aW-YLq" secondAttribute="bottom" id="ERg-hY-lUl"/>
+                <constraint firstItem="Zhh-Yu-HmD" firstAttribute="leading" secondItem="WvF-aW-YLq" secondAttribute="trailing" constant="10" id="HK3-GO-xIN"/>
+                <constraint firstItem="Zhh-Yu-HmD" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="10" id="Hva-I1-yV3"/>
+                <constraint firstAttribute="trailing" secondItem="Zhh-Yu-HmD" secondAttribute="trailing" id="Zct-zJ-jIa"/>
+                <constraint firstItem="gpd-4V-ejn" firstAttribute="top" secondItem="ian-YV-5dC" secondAttribute="bottom" constant="5" id="aic-lp-Pdz"/>
+                <constraint firstItem="Zhh-Yu-HmD" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="10" id="cvs-le-7WD"/>
+                <constraint firstItem="WvF-aW-YLq" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="d4e-69-Pva"/>
+                <constraint firstAttribute="trailing" secondItem="gpd-4V-ejn" secondAttribute="trailing" id="eyE-0i-17K"/>
+                <constraint firstItem="nwn-pc-v9u" firstAttribute="leading" secondItem="WvF-aW-YLq" secondAttribute="trailing" constant="10" id="fj9-gP-mVZ"/>
+                <constraint firstAttribute="trailing" secondItem="ian-YV-5dC" secondAttribute="trailing" id="hMq-AM-dYV"/>
+                <constraint firstAttribute="trailing" secondItem="nwn-pc-v9u" secondAttribute="trailing" id="rt8-mC-7tg"/>
+                <constraint firstItem="nwn-pc-v9u" firstAttribute="top" secondItem="Zhh-Yu-HmD" secondAttribute="bottom" constant="10" id="vdl-Zi-m1C"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="268" height="133"/>
+            <connections>
+                <outlet property="adultRatingLabel" destination="gpd-4V-ejn" id="jHA-1N-CFR"/>
+                <outlet property="languageLabel" destination="ian-YV-5dC" id="Hy6-fE-ntQ"/>
+                <outlet property="movieImageView" destination="WvF-aW-YLq" id="QVx-Sg-Wkh"/>
+                <outlet property="releaseDateLabel" destination="nwn-pc-v9u" id="mD9-Be-5ix"/>
+                <outlet property="titleLabel" destination="Zhh-Yu-HmD" id="kh7-bQ-ysN"/>
+            </connections>
+            <point key="canvasLocation" x="495" y="-1"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="LoginBackground" width="1920" height="1080"/>
+    </resources>
+</document>

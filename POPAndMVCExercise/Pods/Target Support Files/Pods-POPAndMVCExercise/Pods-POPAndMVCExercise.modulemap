@@ -1,0 +1,6 @@
+framework module Pods_POPAndMVCExercise {
+  umbrella header "Pods-POPAndMVCExercise-umbrella.h"
+
+  export *
+  module * { export * }
+}
